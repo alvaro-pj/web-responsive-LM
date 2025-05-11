@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Reserva | La Encomienda</title>
+</head>
+
+<body>
+        <header>
+            <div class="contenedor-nav">
+                <nav class="nav-contacto">
+                    <ul>
+                        <li><a href="#"><ion-icon name="call-outline" target="_blank"></ion-icon> | +34 123456789</a></li>
+                        <li><a href="mailto:laencomienda@reservas.com" target="_blank"><ion-icon name="mail-outline"></ion-icon> | laencomienda@reservas.com</a></li>
+                        <li><a href="https://www.google.com/maps/place/UNIR+%7C+Universidad+Internacional+de+La+Rioja/@42.4622223,-2.4267171,17z/data=!3m1!4b1!4m6!3m5!1s0xd5aab47d68e4865:0x5cc39e2ad8fccd9a!8m2!3d42.4622184!4d-2.4241422!16s%2Fg%2F119pgtsbz?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D" target="_blank"><ion-icon name="navigate-circle-outline"></ion-icon> | Avenida de la Paz, 137</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-redes">
+                    <ul>
+                        <!-- No tienen accion porque no hay redes sociales -->
+                        <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>La Encomienda</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html">Nosotros</a></li>
+                <li><a href="carta.html">Carta</a>
+                    <ul class="submenu">
+                        <li><a href="platos.html">Nuestros platos</a></li>
+                        <li><a href="postres.html">Postres</a></li>
+                        <li><a href="bodega.html">Bodega</a></li>
+                    </ul>
+                </li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    <section class="formulario">
+        <form action="mailto:laencomienda@reservas.com">
+            <legend>Reservar en la Encomienda</legend>
+            <fieldset>
+                <label for="fecha">
+                    <input type="date" name="fecha" id="fecha" class="campo">
+                </label>
+                <label for="personas">
+                    <select name="personas" class="campo">
+                        <option value="1">1 persona</option>
+                        <option value="2" selected>2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7">7 personas</option>
+                        <option value="8">8 personas</option>
+                    </select>
+                </label>
+                <label for="hora">
+                    <select name="hora" class="campo">
+                        <option value="1" selected disabled>Hora</option>
+                        <option value="2">13:30</option>
+                        <option value="3">13:45</option>
+                        <option value="4">14:00</option>
+                        <option value="5">14:15</option>
+                        <option value="6">14:30</option>
+                        <option value="7">14:45</option>
+                        <option value="8">15:00</option>
+                        <option value="9">15:15</option>
+                        <option value="10">15:30</option>
+                        <option value="11">20:30</option>
+                        <option value="12">20:45</option>
+                        <option value="13">21:00</option>
+                        <option value="14">21:15</option>
+                        <option value="15">21:30</option>
+                        <option value="16">21:45</option>
+                        <option value="17">22:00</option>
+                        <option value="18">22:15</option>
+                        <option value="19">22:30</option>
+                    </select>
+                </label>
+                <label for="nombre" >
+                    <input type="text" name="nombre" id="nombre" class="campo" placeholder="Nombre">
+                </label>
+                <label for="comentario">
+                    <textarea name="comentario" id="comentario" class="campo" placeholder="¿Algo que debamos saber?"></textarea>
+                </label>
+                <input class="boton-envio" type="submit" value="Reservar ahora">
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; Página creada para la asignatura de LMYSGE</p>
+    </footer>
+</body>
+
+</html>

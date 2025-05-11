@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-beige: #EDEBE6;
+    --color-verde: #0E3C37;
+    --color-marron: rgb(138, 95, 61);
+    --color-dorado: #D4B05C;
+    --color-texto: #1E1E1E;
+    --font-titulos: "Lora", serif;
+    --font-texto: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: var(--font-texto);
+    background-color: var(--color-verde);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+header {
+    background-image: url(img/restaurante.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 70vh;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: var(--font-titulos);
+    font-weight: 400;
+    font-size: 5rem;
+    margin: 6rem 0;
+}
+
+.contenedor-nav {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-contacto,
+.nav-redes {
+    position: relative;
+    font-size: 1rem;
+}
+
+.nav-contacto ul,
+.nav-redes ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.nav-contacto a,
+.nav-redes a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-contacto a:hover,
+.nav-redes a:hover {
+    color: var(--color-dorado);
+
+}
+
+.menu {
+    background-color: var(--color-marron);
+    text-align: center;
+    position: relative;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: -65px;
+    width: 200px;
+    background-color: var(--color-marron);
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu .submenu li {
+    margin: auto;
+    width: 70%;
+}
+
+.menu a:hover {
+    color: var(--color-dorado);
+    transform: scale(1.2);
+    padding: 0 5px;
+    border-left: solid var(--color-dorado) 0.1rem;
+    border-right: solid var(--color-dorado) 0.1rem;
+    transition: 0.4s;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* INDEX */
+section.inicio {
+    width: 70%;
+    text-align: justify;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+section.inicio h1 {
+    font-family: var(--font-titulos);
+    color: var(--color-beige);
+    font-size: 3rem;
+}
+
+section.inicio h2 {
+    font-family: var(--font-titulos);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-beige);
+}
+
+section.inicio a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-beige);
+    text-decoration: none;
+}
+
+section.inicio a:hover {
+    color: var(--color-dorado);
+    transform: scale(1.1);
+}
+
+/*QUIENES SOMOS*/
+
+
+.nosotros {
+    width: 80vw;
+    height: 100vh;
+    text-align: justify;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nosotros h1 {
+    font-family: var(--font-titulos);
+    color: var(--color-beige);
+    font-size: 3rem;
+    text-align: center;
+    top: 0px;
+    position: absolute;
+    margin-top: 1.5rem;
+}
+
+.contenedor-nosotros {
+    width: 100%;
+    margin-top: 4rem;
+    background-image: url(img/cocinabn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nosotros .texto1,
+.nosotros .texto2 {
+    color: var(--color-texto);
+    background: rgba(237, 235, 230, 0.6);
+    width: 40%;
+    padding: 1.1rem;
+    border-radius: 5px;
+
+}
+
+.nosotros .texto1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+}
+
+.nosotros .texto2 {
+    font-size: 1.2rem;
+}
+
+.nosotros .texto1 span {
+    color: var(--color-dorado);
+}
+
+/*CARTA*/
+.carta {
+    width: 80%;
+    height: 70vh;
+    text-align: justify;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carta h1 {
+    font-family: var(--font-titulos);
+    color: var(--color-beige);
+    font-size: 3rem;
+    text-align: center;
+    top: 0px;
+    position: absolute;
+    margin-top: 1.5rem;
+}
+
+.contenedor-img {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1 px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-img li {
+    position: relative;
+    display: block;
+    width: 266px;
+    float: left;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.contenedor-img ul:hover li {
+    width: 80px;
+    filter: brightness(50%);
+}
+
+.contenedor-img ul li:hover {
+    width: 640px;
+    filter: brightness(100%);
+}
+
+.contenedor-img li img {
+    display: block;
+    width: 640px;
+    height: 100%;
+}
+
+.titulo-imagen {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 110%;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+    animation: cambia-color 10s linear infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes cambia-color {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 100%;
+    }
+}
+
+.titulo-imagen a {
+    display: block;
+    color: var(--color-beige);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: 0 1px 2px var(--color-texto);
+    transition: all 0.5s ease;
+}
+
+.contenedor-img ul li:hover .titulo-imagen {
+    top: 0%;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-imagen:hover a {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.titulo-imagen:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*FORMULARIO*/
+
+.formulario {
+    height: 90vh;
+}
+
+form {
+    background-color: var(--color-beige);
+    border-radius: 20px;
+    margin: 3rem auto;
+    width: 30%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+legend {
+    color: var(--color-dorado);
+    margin-bottom: 3rem;
+    font-family: var(--font-titulos);
+    font-size: 2.2rem;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+    color: var(--color-texto);
+}
+
+label {
+    width: 100%;
+}
+
+.campo {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    border-radius: 10px;
+    font-family: var(--font-texto);
+}
+
+#comentario {
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+.boton-envio {
+    height: 3rem;
+    margin-bottom: 3rem;
+    width: 200px;
+    border-radius: 20rem;
+    background-color: var(--color-marron);
+    cursor: pointer;
+}
+
+.boton-envio:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-texto);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/*PIE DE PAGINA*/
+footer {
+    position: relative;
+    display: flex;
+    text-align: center;
+    height: 12vh;
+    padding-top: 1rem;
+    background-color: var(--color-beige);
+    justify-content: center;
+    bottom: 0px
+}
+
+footer a {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+}
+
+footer a button {
+    position: relative;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-marron);
+    color: white;
+    font-family: var(--font-titulos);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+footer button:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-texto);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+footer p {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0px
+}
+
+/*------------MEDIA QUEYS------------*/
+
+/*TABLETS EN VERTICAL*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .nav-contacto,
+    .nav-redes {
+        font-size: 0.6rem;
+    }
+
+    /*SECCION INDEX*/
+    section.inicio {
+        width: 80%;
+        height: 47vh;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    section.inicio h1 {
+        font-size: 2rem;
+    }
+
+    section.inicio h2 {
+        font-size: 1rem;
+    }
+
+    section.inicio a {
+        font-size: 0.8rem;
+    }
+
+    section.inicio a:active {
+        color: var(--color-dorado);
+        transform: scale(1.1);
+    }
+
+    /*SECCION NOSOTROS*/
+    .nosotros {
+        width: 90%;
+    }
+
+    .nosotros h1 {
+        font-size: 2.5rem;
+        margin-top: 1.8rem;
+    }
+
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .texto1,
+    .nosotros .texto2 {
+        width: 90%;
+    }
+
+    .nosotros .texto1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .nosotros .texto2 {
+        font-size: 1rem;
+    }
+
+    /*SECCION CARTA*/
+
+    .carta {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta h1 {
+        font-size: 2.2rem;
+        margin-top: 1rem;
+    }
+
+    .contenedor-img {
+        width: 100%;
+        height: auto;
+        margin: 5rem auto;
+    }
+
+    .contenedor-img ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedor-img li {
+        width: 100%;
+        float: none;
+    }
+
+    .contenedor-img li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-imagen {
+        position: static;
+    }
+
+    .titulo-imagen a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        color: var(--color-beige);
+    }
+
+    .contenedor-img ul:hover li,
+    .contenedor-img ul li:hover {
+        width: 100%;
+        filter: none;
+    }
+
+    .titulo-imagen:hover a {
+        transform: none;
+    }
+
+    .titulo-imagen:active {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /*SECCION RESERVA*/
+    .formulario {
+        height: 80vh;
+    }
+
+    form {
+        margin: 4rem auto;
+        width: 80%;
+        height: 600px;
+    }
+
+    legend {
+        margin-bottom: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .boton-envio {
+        margin-bottom: 1rem;
+    }
+
+    .boton-envio:active {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: 8vh;
+        padding-top: 0.8rem;
+    }
+
+    footer a {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer a button {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.8rem;
+
+    }
+
+    footer button:hover {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0px
+    }
+}
+
+/*TABLETS EN HORIZONTAL*/
+@media (min-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+    header {
+        height: 30vh;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+
+    .nav-contacto,
+    .nav-redes {
+        font-size: 0.6rem;
+    }
+
+    /*SECCION INDEX*/
+    section.inicio {
+        width: 80%;
+        height: 55vh;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    section.inicio h1 {
+        font-size: 2rem;
+    }
+
+    section.inicio h2 {
+        font-size: 1rem;
+    }
+
+    section.inicio a {
+        font-size: 0.8rem;
+    }
+
+    section.inicio a:active {
+        color: var(--color-dorado);
+        transform: scale(1.1);
+    }
+
+    /*SECCION NOSOTROS*/
+    .nosotros {
+        width: 90%;
+    }
+
+    .nosotros h1 {
+        font-size: 2.5rem;
+        margin-top: 1.8rem;
+    }
+
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .texto1,
+    .nosotros .texto2 {
+        width: 90%;
+    }
+
+    .nosotros .texto1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .nosotros .texto2 {
+        font-size: 1rem;
+    }
+
+    /*SECCION RESERVA*/
+    .formulario {
+        height: 80vh;
+    }
+
+    form {
+        margin: 5rem auto;
+        width: 70%;
+        height: 520px;
+    }
+
+    legend {
+        margin-bottom: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .boton-envio {
+        margin-bottom: 1rem;
+    }
+
+    .boton-envio:active {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: 10vh;
+        padding-top: 0.8rem;
+    }
+
+    footer a {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer a button {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.8rem;
+
+    }
+
+    footer button:hover {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0px
+    }
+}
+
+/*MOVIL EN VERTICAL*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+
+    header {
+        height: 30vh;
+    }
+
+    header h1 {
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+
+    .nav-contacto,
+    .nav-redes {
+        font-size: 0.45rem;
+    }
+
+    .menu {
+        height: 2.5rem;
+    }
+
+    .menu ul {
+        padding-top: 0.5rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    /*SECCION INDEX*/
+    section.inicio {
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    section.inicio h1 {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+
+    section.inicio h2 {
+        font-size: 1rem;
+    }
+
+    section.inicio a {
+        font-size: 0.8rem;
+    }
+
+    section.inicio a:active {
+        color: var(--color-dorado);
+        transform: scale(1.1);
+    }
+
+    /*SECCION NOSOTROS*/
+    .nosotros {
+        width: 90%;
+    }
+
+    .nosotros h1 {
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+    }
+
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .texto1,
+    .nosotros .texto2 {
+        width: 90%;
+    }
+
+    .nosotros .texto1 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .nosotros .texto2 {
+        font-size: 0.8rem;
+    }
+
+    /*SECCION CARTA*/
+
+    .carta {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta h1 {
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+        
+    }
+
+    .contenedor-img {
+        width: 100%;
+        height: auto;
+        margin-top: 7rem;
+    }
+
+    .contenedor-img ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedor-img li {
+        width: 100%;
+        float: none;
+    }
+
+    .contenedor-img li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-imagen {
+        position: static;
+    }
+
+    .titulo-imagen a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        color: var(--color-beige);
+    }
+
+    .contenedor-img ul:hover li,
+    .contenedor-img ul li:hover {
+        width: 100%;
+        filter: none;
+    }
+
+    .titulo-imagen:hover a {
+        transform: none;
+    }
+
+    .titulo-imagen:active {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /*SECCION RESERVA*/
+    .formulario {
+        height: 80vh;
+    }
+
+    form {
+        margin: 4rem auto;
+        width: 85%;
+        height: 600px;
+    }
+
+    legend {
+        text-align: center;
+        margin-bottom: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .boton-envio {
+        margin-bottom: 1rem;
+    }
+
+    .boton-envio:active {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: 8vh;
+        padding-top: 0.8rem;
+    }
+
+    footer a {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer a button {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.8rem;
+
+    }
+
+    footer button:hover {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0px
+    }
+}
+
+/*MOVIL EN HORIZONTAL*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        margin: 0.5rem 0;
+        font-size: 2rem;
+    }
+
+      .nav-contacto,
+    .nav-redes {
+        font-size: 0.6rem;
+    }
+
+    .menu {
+        height: 2.5rem;
+    }
+
+    .menu ul {
+        padding-top: 0.5rem;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+
+    /*SECCION INDEX*/
+    section.inicio {
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    section.inicio h1 {
+        font-size: 2rem;
+    }
+
+    section.inicio h2 {
+        font-size: 1rem;
+    }
+
+    section.inicio a {
+        font-size: 0.8rem;
+    }
+
+    section.inicio a:active {
+        color: var(--color-dorado);
+        transform: scale(1.1);
+    }
+
+    /*SECCION NOSOTROS*/
+    .nosotros {
+        width: 90%;
+        height: 190vh;
+    }
+
+    .nosotros h1 {
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+    }
+
+    .contenedor-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .texto1,
+    .nosotros .texto2 {
+        width: 90%;
+    }
+
+    .nosotros .texto1 {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .nosotros .texto2 {
+        font-size: 0.8rem;
+    }
+
+       /*SECCION CARTA*/
+
+    .carta {
+        width: 90%;
+        height: 340vh;
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta h1 {
+        font-size: 1.8rem;
+        margin-top: 1.8rem;
+        
+    }
+
+    .contenedor-img {
+        width: 80%;
+        height: auto;
+        margin-top: 7rem;
+    }
+
+    .contenedor-img ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contenedor-img li {
+        width: 100%;
+        float: none;
+    }
+
+    .contenedor-img li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo-imagen {
+        position: static;
+    }
+
+    .titulo-imagen a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        color: var(--color-beige);
+    }
+
+    .contenedor-img ul:hover li,
+    .contenedor-img ul li:hover {
+        width: 100%;
+        filter: none;
+    }
+
+    .titulo-imagen:hover a {
+        transform: none;
+    }
+
+    .titulo-imagen:active {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /*SECCION RESERVA*/
+    .formulario {
+        height: 170vh;
+    }
+
+    form {
+        margin: 5rem auto;
+        width: 80%;
+        height: 520px;
+    }
+
+    legend {
+        margin-bottom: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .boton-envio {
+        margin-bottom: 1rem;
+    }
+
+    .boton-envio:active {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    /*FOOTER*/
+    footer {
+        height: 20vh;
+        padding-top: 0.8rem;
+    }
+
+
+
+    footer a {
+        width: 120px;
+        height: 40px;
+    }
+
+    footer a button {
+        padding: 0.6rem 1.6rem;
+        font-size: 0.8rem;
+
+    }
+
+    footer button:hover {
+        background-color: var(--color-dorado);
+        color: var(--color-texto);
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0px
+    }
+}
