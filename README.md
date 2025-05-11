@@ -8,6 +8,8 @@ Se trata de una **página web de un restaurante**, diseñada de forma responsive
 
 Para cumplir con los requerimientos del proyecto (como los **menús desplegables** y la estructura de múltiples secciones), se han utilizado **páginas de relleno** como contenido demostrativo.
 
+No se han incluido capturas ni justificación del trabajo en grupo, ya que el proyecto ha sido desarrollado de manera individual.
+
 ## 🌐 URL del proyecto
 
 Puedes ver la web publicada en GitHub Pages:  
